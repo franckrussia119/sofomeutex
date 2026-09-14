@@ -81,18 +81,24 @@ Coolify can build straight from this repo. Two supported approaches:
    + HTTPS through its built-in proxy automatically.
 
 > **Troubleshooting: "Healthcheck unhealthy — Connection refused"**
-> This means Coolify's healthcheck is probing a port Nginx isn't listening on.
-> As of this version, Nginx listens on **both 3000 and 80**, which covers
-> Coolify's default and the common alternative. If it *still* happens:
-> 1. Open the app in Coolify -> **General / Configuration** tab -> find the
->    **Ports Exposes** field. Note whatever port number is written there.
-> 2. This field is stored on the Coolify application itself and does **not**
->    auto-update just because you pushed a new Dockerfile — you may need to
->    edit it manually to match a port Nginx listens on (3000 or 80), save, and
->    redeploy.
-> 3. As a quick unblock, you can also just toggle the built-in **Health Check**
->    off in Coolify's UI — the app will still run fine, Coolify just won't
->    gate deployments on the probe.
+> This project's healthcheck explicitly targets `127.0.0.1` (not `localhost`).
+> That's intentional: on Alpine/musl-based images, `wget localhost` frequently
+> resolves to the IPv6 address `::1` before the IPv4 `127.0.0.1`, and if Nginx
+> isn't listening on IPv6 that connection is refused instantly — even though
+> Nginx started up perfectly fine on IPv4. `nginx.conf` now listens on both
+> `0.0.0.0` and `[::]` for ports 3000 and 80, and the healthcheck bypasses the
+> ambiguity entirely by using the literal IP `127.0.0.1`. If you still hit
+> this error after redeploying:
+> 1. Open a shell into the running container from Coolify (or
+>    `docker exec -it <container> sh`) and run
+>    `cat /etc/nginx/conf.d/default.conf` to confirm your latest `nginx.conf`
+>    actually made it into the image (rule out a stale build cache — try a
+>    "force rebuild without cache" in Coolify).
+> 2. From inside that same shell, run `wget -qO- http://127.0.0.1:3000/` — if
+>    that succeeds but Coolify still reports unhealthy, the issue is in how
+>    Coolify's own health check is configured (not the container), so check
+>    the app's **Ports Exposes** field or simply toggle **Health Check off**
+>    in Coolify's UI as a quick unblock.
 
 ### Option B — Docker Compose deployment
 1. In Coolify: **New Resource -> Application -> Docker Compose**.
