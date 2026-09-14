@@ -72,30 +72,36 @@ Coolify can build straight from this repo. Two supported approaches:
 2. Point it at your GitHub repo and branch.
 3. Build Pack: choose **Dockerfile** (Coolify will auto-detect the `Dockerfile` at
    the repo root).
-4. Port: this app listens on **port 3000** inside the container (matches
-   Coolify's default "Ports Exposes" value, so you usually don't need to touch
-   it). If your app's port setting was left at something else, or you changed
-   the default previously, set **Ports Exposes = 3000** in the app's General
-   settings.
+4. Port: Nginx listens on **both port 3000 and port 80** inside the container,
+   specifically so it matches Coolify's default regardless of which one your
+   app's "Ports Exposes" setting is locked to. You shouldn't need to change
+   anything, but if the healthcheck still fails, see the troubleshooting note
+   below.
 5. Deploy. Coolify builds the image, runs the container, and wires up your domain
    + HTTPS through its built-in proxy automatically.
 
 > **Troubleshooting: "Healthcheck unhealthy — Connection refused"**
-> This means Coolify's healthcheck is probing a different port than the one
-> Nginx is listening on inside the container. This project listens on **3000**
-> (see `nginx.conf`). In the app's Coolify settings, make sure **Ports
-> Exposes** is set to `3000`. If you'd rather run Nginx on port 80 instead,
-> change `listen 3000;` in `nginx.conf`, `EXPOSE 3000` and the `HEALTHCHECK`
-> line in the `Dockerfile` to `80`, and set Coolify's Ports Exposes to `80` to
-> match — the two must always agree.
+> This means Coolify's healthcheck is probing a port Nginx isn't listening on.
+> As of this version, Nginx listens on **both 3000 and 80**, which covers
+> Coolify's default and the common alternative. If it *still* happens:
+> 1. Open the app in Coolify -> **General / Configuration** tab -> find the
+>    **Ports Exposes** field. Note whatever port number is written there.
+> 2. This field is stored on the Coolify application itself and does **not**
+>    auto-update just because you pushed a new Dockerfile — you may need to
+>    edit it manually to match a port Nginx listens on (3000 or 80), save, and
+>    redeploy.
+> 3. As a quick unblock, you can also just toggle the built-in **Health Check**
+>    off in Coolify's UI — the app will still run fine, Coolify just won't
+>    gate deployments on the probe.
 
 ### Option B — Docker Compose deployment
 1. In Coolify: **New Resource -> Application -> Docker Compose**.
 2. Point it at the repo; Coolify will read `docker-compose.yml`.
 3. Note: Coolify manages its own reverse proxy/port routing, so if you use this
-   route you may need to remove the fixed `ports: ["3000:3000"]` mapping in
+   route you may need to remove the fixed `ports` mapping in
    `docker-compose.yml` and instead let Coolify assign/proxy the port (Coolify's
-   UI will guide you -- expose port `3000` from the `web` service).
+   UI will guide you -- expose port `3000` or `80` from the `web` service,
+   both work).
 4. Deploy.
 
 No secrets or environment variables are needed for either option since the app
