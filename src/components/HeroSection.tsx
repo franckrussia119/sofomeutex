@@ -307,8 +307,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             <button
               onClick={() => onNavigate('supply')}
               className="w-12 h-12 rounded-full bg-amber-700 hover:bg-amber-800 text-white shadow-lg flex items-center justify-center transition-all hover:scale-105 cursor-pointer"
-              aria-label="Explore All 4 Supply Pillars"
-              title="Explore All 4 Supply Pillars"
+              aria-label="Explore All 5 Supply Pillars"
+              title="Explore All 5 Supply Pillars"
             >
               <ArrowDown className="w-5 h-5 animate-bounce" />
             </button>

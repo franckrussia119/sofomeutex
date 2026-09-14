@@ -8,7 +8,7 @@ export const HERO_SLIDES: CarouselSlide[] = [
     subtitle: 'Exclusive Authorized Importation & Distribution in Cameroon',
     origin: 'Chachoengsao, Thailand (Laem Chabang Port)',
     destination: 'Port of Douala & Yaoundé, Cameroon',
-    image: 'https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&w=1400&q=85',
+    image: '/assets/images/double_a_reams_1789399160563.jpg',
     tag: 'Cameroon Exclusivity',
     description: 'Direct institutional supply of world-renowned Double A 80 GSM and 75 GSM paper. Engineered from farmed trees with zero-jam precision, CIE 165 ultra-whiteness, and multi-machine runnability across Cameroon and the CEMAC zone.',
     keyMetric: '8,000+ Reams / 40ft HC',
@@ -21,7 +21,7 @@ export const HERO_SLIDES: CarouselSlide[] = [
     subtitle: 'Direct Agro-Corridor from Córdoba & Santa Fe Grain Belts',
     origin: 'Buenos Aires & Rosario, Argentina',
     destination: 'Port of Douala Hub, Cameroon',
-    image: 'https://images.unsplash.com/photo-1578849278619-e73505e9610f?auto=format&fit=crop&w=1400&q=85',
+    image: '/assets/images/popcorn_corn_kernels.jpg',
     tag: 'Premium Non-GMO Crop',
     description: 'Export-grade Argentine popcorn kernels featuring an expansion ratio of 42–44+ for airy butterfly puffs and uniform spherical mushroom kernels for caramel coating. 99.8% purity guaranteed with phytosanitary inspection.',
     keyMetric: '44+ Expansion Ratio',
@@ -34,7 +34,7 @@ export const HERO_SLIDES: CarouselSlide[] = [
     subtitle: 'Cream & Grade A Original Bales from Western Europe',
     origin: 'Antwerp, Rotterdam & Hamburg (UK, DE, NL, IT, FR)',
     destination: 'Port of Douala, Central Africa Distribution',
-    image: 'https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1400&q=85',
+    image: '/assets/images/dresses_bales_1789399175918.jpg',
     tag: 'Top-Tier European Sorting',
     description: 'Rigidly curated second-hand clothing bales and paired footwear sourced from certified collection centers in Germany, the UK, the Netherlands, Italy, and France. Compact hydraulic 45kg/55kg bales and paired shoe sacks.',
     keyMetric: '550+ Bales / 40ft HC',
@@ -47,11 +47,24 @@ export const HERO_SLIDES: CarouselSlide[] = [
     subtitle: 'High-Strength Architectural Moulding & Medical Plaster',
     origin: 'Mediterranean Industrial Basin (Valencia / Marseille)',
     destination: 'Port of Douala Bulk Cargo Depot',
-    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=85',
+    image: '/assets/images/plaster_ceiling_room.jpg',
     tag: 'Industrial Grade Purity',
     description: 'High-whiteness, quick-setting calcined gypsum plaster formulated for architectural decorative moulding, smooth wall skimming, and orthopedic casting. Controlled setting time, flawless surface finish, and moisture barrier valve bags.',
     keyMetric: '27 Metric Tons / 20ft FCL',
     metricLabel: 'Palletized Heavy Payload'
+  },
+  {
+    id: 'slide-appliances',
+    pillar: 'Home Refrigeration & Appliances',
+    title: 'Household & Commercial Refrigerators',
+    subtitle: 'Direct Factory-Gate Sourcing of Fridges, Freezers & Combo Units',
+    origin: 'Guangzhou & Foshan Industrial Belt, China',
+    destination: 'Port of Douala, Cameroon (Retail & Wholesale Distribution)',
+    image: '/assets/images/fridge_double_door.jpg',
+    tag: 'Factory-Direct Appliances',
+    description: 'Full-container loads of single-door mini fridges, double-door combo refrigerators, and chest freezers, sourced directly from certified manufacturers with CE/CCC compliance and voltage configurations tailored for the Central African grid.',
+    keyMetric: '600+ Units / 40ft HC',
+    metricLabel: 'Mixed-Model Container Loading'
   }
 ];
 
@@ -78,11 +91,13 @@ export const COMMODITY_ITEMS: CommodityItem[] = [
     incoterms: ['CIF Port of Douala', 'FOB Laem Chabang', 'DAP Inland Douala / Yaoundé'],
     certifications: ['ISO 9001:2015', 'ISO 14001', 'Farmed Trees Paper Tree (Non-deforestation)', 'SGS Weight & Count Assay'],
     gradeAssay: 'No Jam 24/7 Runnability Certified; Tested on 100ppm High-Speed Production Presses',
-    image: 'https://images.unsplash.com/photo-1589330694653-dad6d3240a2b?auto=format&fit=crop&w=900&q=80',
+    image: '/assets/images/double_a_reams_1789399160563.jpg',
     gallery: [
-      'https://images.unsplash.com/photo-1589330694653-dad6d3240a2b?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=1200&q=80'
+      '/assets/images/paper_container_loading.webp',
+      '/assets/images/paper_warehouse_pallets.jpg',
+      '/assets/images/double_a_paper_1789399128122.jpg',
+      '/assets/images/paper_double_a_boxes.avif',
+      '/assets/images/paper_double_a_reams.webp'
     ],
     summary: 'The benchmark of luxury copier paper globally, imported with sovereign exclusivity directly to Cameroon. Designed to resist high-humidity tropical conditions with zero jams.',
     detailedDescription: 'Wardiere & Co. is the exclusive authorized importer of genuine Double A A4 copier paper in the Republic of Cameroon. Manufactured from sustainable Farmed Trees ("Paper Tree from KHAN-NA"), Double A fibers provide high fiber density, exceptional smoothness, and high opacity that eliminates show-through on double-sided color copying and offset printing. Specially packed in heat-sealed moisture barrier wrappers to prevent paper warping in Doualas humid maritime climate.',
@@ -116,11 +131,11 @@ export const COMMODITY_ITEMS: CommodityItem[] = [
     incoterms: ['CIF Port of Douala', 'CFR Port of Douala', 'FOB Buenos Aires / Rosario'],
     certifications: ['SENASA Phytosanitary Certificate', 'SGS Pre-Shipment Inspection', 'Non-GMO Statement', 'Certificate of Origin Form A'],
     gradeAssay: 'Unpopped kernels < 1.5%; Explosion rate > 98.8%; Zero insect damage',
-    image: 'https://images.unsplash.com/photo-1578849278619-e73505e9610f?auto=format&fit=crop&w=900&q=80',
+    image: '/assets/images/popcorn_corn_kernels.jpg',
     gallery: [
-      'https://images.unsplash.com/photo-1578849278619-e73505e9610f?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1585647347483-22b66260dfff?auto=format&fit=crop&w=1200&q=80'
+      '/assets/images/popcorn_bowls_top.jpg',
+      '/assets/images/popcorn_closeup.jpg',
+      '/assets/images/popcorn_corn_kernels.jpg'
     ],
     summary: 'Direct vessel loads of Argentine corn kernels celebrated worldwide for their high expansion volume, tender hull-less texture, and rich natural buttery aroma.',
     detailedDescription: 'Harvested from fertile Argentine soils under strict agro-climatic conditions, our imported Argentine popcorn is selected specifically for industrial commercial poppers, snack food manufacturing conglomerates, and cinema chains throughout Central Africa. Our Butterfly kernels pop into large, airy wings with minimal broken fragments, while our Mushroom kernels provide the heavy-bodied spherical structure required for industrial sugar, caramel, and cheese coating.',
@@ -154,11 +169,11 @@ export const COMMODITY_ITEMS: CommodityItem[] = [
     incoterms: ['CIF Douala Port', 'FOB Antwerp / Rotterdam / Hamburg', 'CFR Douala'],
     certifications: ['EU Fumigation & Disinfection Certificate', 'Chamber of Commerce Certificate of Origin', 'SGS Pre-Shipment Seal Inspection'],
     gradeAssay: 'Zero torn fabrics; No stains; Fresh current European high-street brands; Paired and banded footwear',
-    image: 'https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=900&q=80',
+    image: '/assets/images/dresses_bales_1789399175918.jpg',
     gallery: [
-      'https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=80'
+      '/assets/images/secondhand_dresses_1789399142954.jpg',
+      '/assets/images/used_clothes_bales_1.jpg',
+      '/assets/images/used_clothes_bales_2.webp'
     ],
     summary: 'Consolidated from European collection hubs, our bales represent pristine Grade A fashion apparel, denim, sportswear, and sorted paired footwear packaged for bulk retail redistribution.',
     detailedDescription: 'We manage direct long-term supply contracts with licensed recycling and sorting houses across the United Kingdom, Germany, Belgium, Italy, and the Netherlands. Each shipment is machine-sorted by category, gender, and season before being hydraulic-pressed into clear-labeled, moisture-proof bales. Our paired shoes are inspected pair-by-pair to guarantee two matching shoes tied together, cleaned, and packed into 25kg transparent sacks.',
@@ -192,11 +207,11 @@ export const COMMODITY_ITEMS: CommodityItem[] = [
     incoterms: ['CIF Port of Douala', 'FOB Valencia / Genoa / Marseille', 'CFR Port of Douala'],
     certifications: ['EN 13279-1 European Building Standard', 'ISO 9001 Factory Quality Control', 'SGS Chemical Assay Certificate'],
     gradeAssay: 'Free of silica lumps, unburnt gypsum, and heavy metals; Ultra-smooth trowel finish',
-    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80',
+    image: '/assets/images/plaster_ceiling_room.jpg',
     gallery: [
-      'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=1200&q=80'
+      '/assets/images/plaster_moulding_corner.jpg',
+      '/assets/images/plaster_moulding_detail.jpg',
+      '/assets/images/plaster_ceiling_room.jpg'
     ],
     summary: 'Ultra-refined white gypsum plaster formulated for smooth internal wall plastering, cornices, decorative ceilings (staff), and medical casting applications.',
     detailedDescription: 'Our industrial plaster is calcined in state-of-the-art rotary kilns to produce an exceptionally pure, uniform hemihydrate gypsum powder. Renowned among Central African contractors, ceiling specialists, and hardware distributors for its rapid strength development, smooth workability, and brilliant white finish that drastically reduces primer paint consumption.',
@@ -206,6 +221,44 @@ export const COMMODITY_ITEMS: CommodityItem[] = [
       { label: 'Packaging Type', value: 'Heavy Laminated Valve Bags on Heat-Treated Pallets' },
       { label: 'Applications', value: 'Ceilings, Mouldings, Medical Casts, Drywall Jointing' },
       { label: 'Weather Protection', value: 'Double-Layered Shrink Wrap for Tropical Ocean Transit' }
+    ]
+  },
+  {
+    id: 'prod-fridges-appliances',
+    name: 'Household & Commercial Refrigerators, Freezers & Combo Units',
+    pillar: 'Home Refrigeration & Appliances',
+    categoryTag: 'Home Appliances & Electronics',
+    origin: 'Guangzhou, Foshan & Shunde Industrial Belt, China',
+    destination: 'Port of Douala, Cameroon (National Retail & Wholesale Distribution)',
+    exclusiveStatus: 'Factory-Direct Bulk Sourcing',
+    specs: [
+      'Models: Single-Door Mini Fridges, Double-Door Top-Freezer Combos, Chest Freezers',
+      'Capacity Range: 60L Mini Units up to 300L+ Family Combo Units',
+      'Voltage/Frequency: 220-240V / 50Hz Configured for Central African Grid',
+      'Refrigerant: R600a Eco-Friendly, Low Energy Consumption Compressors',
+      'Compliance: CE, CCC & RoHS Certified Manufacturing Standards'
+    ],
+    containerCapacity: '600+ Mixed-Model Units per 40ft High Cube Container (Palletized & Corner-Braced)',
+    packaging: 'Individual 5-Layer Corrugated Export Cartons with Styrofoam Corner Protection & Pallet Shrink-Wrap',
+    moq: '1x 40ft High Cube Container (Mixed Model Configuration Available)',
+    hsCode: '8418.21.00',
+    incoterms: ['CIF Port of Douala', 'FOB Guangzhou / Shenzhen', 'CFR Port of Douala'],
+    certifications: ['CE Declaration of Conformity', 'CCC Manufacturing Certificate', 'SGS Pre-Shipment Inspection', 'Certificate of Origin Form A'],
+    gradeAssay: 'Full functional test prior to loading; Zero dead-on-arrival tolerance; Compressor pressure-tested at origin',
+    image: '/assets/images/fridge_double_door.jpg',
+    gallery: [
+      '/assets/images/fridge_mini_white.jpg',
+      '/assets/images/fridge_open_stocked.jpg',
+      '/assets/images/fridge_double_door.jpg'
+    ],
+    summary: 'Factory-direct household and commercial refrigeration units engineered for Central African voltage and climate conditions, delivered in full or mixed-model container loads.',
+    detailedDescription: 'Wardiere & Co. sources refrigerators, freezers, and combo units directly from certified manufacturing partners in the Guangzhou-Foshan industrial corridor, bypassing wholesale middlemen to deliver factory pricing to Cameroonian retailers and distributors. Every unit is configured for the regional 220-240V/50Hz power grid and tropical ambient temperatures, with R600a eco-refrigerant compressors chosen for durability under frequent grid fluctuations. Mixed-model container loading allows distributors to combine mini fridges, double-door combos, and chest freezers within a single FCL shipment to match retail demand.',
+    keyFeatures: [
+      { label: 'Sourcing Model', value: 'Direct Factory-Gate Procurement, Zero Wholesale Markup' },
+      { label: 'Unit Range', value: 'Mini Fridges, Double-Door Combos & Chest Freezers' },
+      { label: 'Grid Compatibility', value: 'Configured for 220-240V / 50Hz Central African Standard' },
+      { label: 'Quality Control', value: '100% Pre-Shipment Functional & Pressure Testing' },
+      { label: 'Container Flexibility', value: 'Mixed-Model Loading Available per Container' }
     ]
   }
 ];
@@ -258,6 +311,18 @@ export const SHIPPING_LANES: ShippingLane[] = [
     commodityCargo: 'High-Grade Industrial White Gypsum Plaster',
     status: 'Discharging',
     notes: 'Heavy-duty 20ft container payloads (up to 27 MT per container) with waterproof pallet strapping.'
+  },
+  {
+    id: 'lane-guangzhou-douala',
+    name: 'Far East Appliance Corridor',
+    originPort: 'Port of Guangzhou / Shenzhen, China (CNGZG / CNSZX)',
+    destinationPort: 'Port of Douala Terminal, Cameroon (CMDLA)',
+    transitDays: 32,
+    frequency: 'Bi-Weekly Consolidated Container Service',
+    primaryCarrier: 'COSCO Shipping & CMA CGM',
+    commodityCargo: 'Refrigerators, Freezers & Combo Appliance Units',
+    status: 'Scheduled',
+    notes: 'Corner-braced palletized cartons with anti-vibration dunnage for compressor protection during transit.'
   }
 ];
 
@@ -430,9 +495,9 @@ export const KEY_COMPANY_STATS = [
     subtext: 'Demurrage-free rapid clearance at Port of Douala'
   },
   {
-    value: '4 Core Pillars',
+    value: '5 Core Pillars',
     label: 'Import Verticals',
-    subtext: 'Paper, Argentine Popcorn, European Bales & Gypsum'
+    subtext: 'Paper, Argentine Popcorn, European Bales, Gypsum & Appliances'
   }
 ];
 
@@ -444,7 +509,7 @@ export const FRENCH_HERO_SLIDES: CarouselSlide[] = [
     subtitle: 'Importation & Distribution Exclusive Autorisée au Cameroun',
     origin: 'Chachoengsao, Thaïlande (Port de Laem Chabang)',
     destination: 'Port de Douala & Yaoundé, Cameroun',
-    image: 'https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&w=1400&q=85',
+    image: '/assets/images/double_a_reams_1789399160563.jpg',
     tag: 'Exclusivité Cameroun',
     description: 'Approvisionnement institutionnel direct du célèbre papier Double A 80g et 75g. Fabriqué à partir d’arbres de culture (KHAN-NA), zéro bourrage, blancheur CIE 165 et excellente imprimabilité pour le Cameroun et la zone CEMAC.',
     keyMetric: '8 000+ Ramettes / 40ft HC',
@@ -457,7 +522,7 @@ export const FRENCH_HERO_SLIDES: CarouselSlide[] = [
     subtitle: 'Corridor Agro-Industriel Direct de Córdoba & Santa Fe',
     origin: 'Buenos Aires & Rosario, Argentine',
     destination: 'Plateforme Port de Douala, Cameroun',
-    image: 'https://images.unsplash.com/photo-1578849278619-e73505e9610f?auto=format&fit=crop&w=1400&q=85',
+    image: '/assets/images/popcorn_corn_kernels.jpg',
     tag: 'Récolte Premium Non-OGM',
     description: 'Grains de maïs à pop-corn argentins de qualité export offrant un taux d’expansion exceptionnel de 42–44+ pour des flocons légers et grains champignons pour enrobage caramel. Pureté 99,8% garantie par inspection phytosanitaire.',
     keyMetric: 'Taux d’Expansion 44+',
@@ -470,7 +535,7 @@ export const FRENCH_HERO_SLIDES: CarouselSlide[] = [
     subtitle: 'Balles Originales Crème & Grade A d’Europe de l’Ouest',
     origin: 'Anvers, Rotterdam & Hambourg (RU, DE, NL, IT, FR)',
     destination: 'Port de Douala, Distribution Afrique Centrale',
-    image: 'https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1400&q=85',
+    image: '/assets/images/dresses_bales_1789399175918.jpg',
     tag: 'Tri Européen Certifié',
     description: 'Balles de vêtements d’occasion rigoureusement sélectionnées et chaussures appariées provenant de centres de collecte agréés en Allemagne, au Royaume-Uni, aux Pays-Bas, en Italie et en France. Balles étanches de 45kg/55kg.',
     keyMetric: '550+ Balles / 40ft HC',
@@ -483,11 +548,24 @@ export const FRENCH_HERO_SLIDES: CarouselSlide[] = [
     subtitle: 'Plâtre de Moulage Ultra-Blanc & Bandes Plâtrées',
     origin: 'Bassin Industriel Méditerranéen (Valence / Marseille)',
     destination: 'Dépôt Vrac & Palettes du Port de Douala',
-    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=85',
+    image: '/assets/images/plaster_ceiling_room.jpg',
     tag: 'Haute Pureté Industrielle',
     description: 'Plâtre de gypse calciné extra-blanc à prise contrôlée, formulé pour moulures architecturales, enduits lisses et plâtres médicaux. Prise rapide, finition impeccable et sacs à valve étanches contre l’humidité tropicale.',
     keyMetric: '27 Tonnes / 20ft FCL',
     metricLabel: 'Charge Lourde Palettisée'
+  },
+  {
+    id: 'slide-appliances',
+    pillar: 'Home Refrigeration & Appliances',
+    title: 'Réfrigérateurs Domestiques & Commerciaux',
+    subtitle: 'Approvisionnement Direct Usine en Frigos, Congélateurs & Combinés',
+    origin: 'Zone Industrielle de Guangzhou & Foshan, Chine',
+    destination: 'Port de Douala, Cameroun (Distribution Détail & Gros)',
+    image: '/assets/images/fridge_double_door.jpg',
+    tag: 'Électroménager Direct Usine',
+    description: 'Chargements complets de mini-réfrigérateurs, combinés double porte et congélateurs coffres, sourcés directement auprès de fabricants certifiés avec conformité CE/CCC et configuration de tension adaptée au réseau électrique d’Afrique Centrale.',
+    keyMetric: '600+ Unités / 40ft HC',
+    metricLabel: 'Chargement Multi-Modèles'
   }
 ];
 
@@ -607,6 +685,35 @@ export const FRENCH_COMMODITY_ITEMS: CommodityItem[] = [
       { label: 'Usages', value: 'Staff, Faux-Plafonds, Moulures, Bandes Médicales' },
       { label: 'Protection Climat', value: 'Double Housse Thermo-Rétractable Anti-Pluie' }
     ]
+  },
+  {
+    ...COMMODITY_ITEMS[4],
+    name: 'Réfrigérateurs, Congélateurs & Combinés Domestiques et Commerciaux',
+    categoryTag: 'Électroménager & Électronique',
+    destination: 'Port de Douala, Cameroun (Distribution Détail & Gros)',
+    exclusiveStatus: 'Approvisionnement Direct Usine',
+    specs: [
+      'Modèles: Mini-Réfrigérateurs, Combinés Double Porte, Congélateurs Coffres',
+      'Capacité: De 60L (Mini) à 300L+ (Combinés Familiaux)',
+      'Tension/Fréquence: 220-240V / 50Hz Configuré pour le Réseau d’Afrique Centrale',
+      'Réfrigérant: R600a Écologique, Compresseurs Basse Consommation',
+      'Conformité: Normes de Fabrication CE, CCC & RoHS'
+    ],
+    containerCapacity: '600+ Unités Multi-Modèles par Conteneur 40ft High Cube (Palettisé & Renforcé aux Angles)',
+    packaging: 'Cartons d’Exportation Ondulés 5 Couches avec Protection Polystyrène & Filmage Palette',
+    moq: '1x Conteneur 40ft High Cube (Configuration Multi-Modèles Disponible)',
+    incoterms: ['CIF Port de Douala', 'FOB Guangzhou / Shenzhen', 'CFR Port de Douala'],
+    certifications: ['Déclaration de Conformité CE', 'Certificat de Fabrication CCC', 'Inspection Avant Expédition SGS', 'Certificat d’Origine Formule A'],
+    gradeAssay: 'Test fonctionnel complet avant chargement ; Tolérance zéro panne à l’arrivée ; Compresseurs testés en pression à l’origine',
+    summary: 'Réfrigérateurs et congélateurs domestiques et commerciaux directement sourcés en usine, conçus pour la tension électrique et le climat de l’Afrique Centrale, livrés en conteneurs complets ou multi-modèles.',
+    detailedDescription: 'Wardiere & Co. sourcé ses réfrigérateurs, congélateurs et combinés directement auprès de partenaires manufacturiers certifiés du corridor industriel Guangzhou-Foshan, en éliminant les intermédiaires grossistes pour offrir des prix usine aux distributeurs et détaillants camerounais. Chaque unité est configurée pour le réseau électrique régional 220-240V/50Hz et les conditions climatiques tropicales, avec des compresseurs au réfrigérant écologique R600a choisis pour leur robustesse face aux fluctuations fréquentes du réseau. Le chargement multi-modèles permet aux distributeurs de combiner mini-réfrigérateurs, combinés double porte et congélateurs coffres au sein d’un même conteneur FCL.',
+    keyFeatures: [
+      { label: 'Modèle d’Approvisionnement', value: 'Achat Direct Usine, Zéro Marge Grossiste' },
+      { label: 'Gamme d’Unités', value: 'Mini-Réfrigérateurs, Combinés Double Porte & Congélateurs Coffres' },
+      { label: 'Compatibilité Réseau', value: 'Configuré pour la Norme 220-240V / 50Hz d’Afrique Centrale' },
+      { label: 'Contrôle Qualité', value: 'Test Fonctionnel et de Pression à 100% Avant Expédition' },
+      { label: 'Flexibilité Conteneur', value: 'Chargement Multi-Modèles Disponible par Conteneur' }
+    ]
   }
 ];
 
@@ -650,6 +757,16 @@ export const FRENCH_SHIPPING_LANES: ShippingLane[] = [
     primaryCarrier: 'ONE & Arkas Line',
     commodityCargo: 'Plâtre Industriel Blanc Haute Pureté pour Construction',
     notes: 'Charges lourdes conteneurs 20ft (jusqu’à 27 tonnes) avec sangles étanches.'
+  },
+  {
+    ...SHIPPING_LANES[4],
+    name: 'Corridor Électroménager Extrême-Orient',
+    originPort: 'Port de Guangzhou / Shenzhen, Chine (CNGZG / CNSZX)',
+    destinationPort: 'Terminal du Port de Douala, Cameroun (CMDLA)',
+    frequency: 'Service Conteneurs Groupés Bimensuel',
+    primaryCarrier: 'COSCO Shipping & CMA CGM',
+    commodityCargo: 'Réfrigérateurs, Congélateurs & Combinés Électroménagers',
+    notes: 'Cartons palettisés avec calage anti-vibration pour la protection des compresseurs pendant le transit.'
   }
 ];
 

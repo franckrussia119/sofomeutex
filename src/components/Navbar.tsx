@@ -19,7 +19,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   const navItems: { id: PageId; label: string; badge?: string }[] = [
     { id: 'home', label: t.nav.home },
-    { id: 'supply', label: t.nav.supply, badge: '4 Core Pillars' },
+    { id: 'supply', label: t.nav.supply, badge: '5 Core Pillars' },
     { id: 'logistics', label: t.nav.logistics },
     { id: 'about', label: t.nav.about },
     { id: 'clients', label: t.nav.clients },

@@ -36,7 +36,7 @@ const HERO_BG_SLIDES: HeroBgSlide[] = [
   },
   {
     id: 'slide-paper',
-    image: 'https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&w=2000&q=85',
+    image: '/assets/images/paper_container_loading.webp',
     pillarEn: 'Exclusive Double A Copier Paper',
     pillarFr: 'Papier Reprographique Double A Exclusif',
     captionEn: 'Sovereign mill allocation from Thailand — CIE 165 ultra-whiteness & 24/7 zero-jam',
@@ -44,7 +44,7 @@ const HERO_BG_SLIDES: HeroBgSlide[] = [
   },
   {
     id: 'slide-popcorn',
-    image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=2000&q=85',
+    image: '/assets/images/popcorn_bowls_top.jpg',
     pillarEn: 'Argentine Gourmet Popcorn',
     pillarFr: 'Maïs Pop-corn Gourmet d’Argentine',
     captionEn: 'High-expansion non-GMO yellow butterfly & mushroom kernels from Córdoba & Santa Fe',
@@ -52,7 +52,7 @@ const HERO_BG_SLIDES: HeroBgSlide[] = [
   },
   {
     id: 'slide-textile',
-    image: 'https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=2000&q=85',
+    image: '/assets/images/dresses_bales_1789399175918.jpg',
     pillarEn: 'European Sorted Textiles & Shoes',
     pillarFr: 'Friperie & Chaussures Triées d’Europe',
     captionEn: 'Grade A original bales & 100% paired shoes consolidated from Antwerp & Rotterdam',
@@ -60,11 +60,19 @@ const HERO_BG_SLIDES: HeroBgSlide[] = [
   },
   {
     id: 'slide-plaster',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=85',
+    image: '/assets/images/plaster_moulding_corner.jpg',
     pillarEn: 'Pure Gypsum & Construction Plaster',
     pillarFr: 'Plâtre de Gypse Pur de Construction',
     captionEn: '99.2% pure hemihydrate EN 13279-1 standard for architectural staff & mouldings',
     captionFr: '99.2% hémihydrate pur norme EN 13279-1 pour staff architectural & moulures'
+  },
+  {
+    id: 'slide-appliances',
+    image: '/assets/images/fridge_open_stocked.jpg',
+    pillarEn: 'Home Refrigeration & Appliances',
+    pillarFr: 'Réfrigérateurs & Électroménager',
+    captionEn: 'Factory-direct fridges, freezers & combo units sourced from Guangzhou & Foshan',
+    captionFr: 'Réfrigérateurs, congélateurs & combinés direct usine de Guangzhou & Foshan'
   }
 ];
 

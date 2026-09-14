@@ -35,17 +35,19 @@ export const SupplyPage: React.FC<SupplyPageProps> = ({
     { id: 'paper', label: language === 'fr' ? 'Papier Double A (Exclusif)' : 'Double A Paper (Exclusive)' },
     { id: 'popcorn', label: language === 'fr' ? 'Pop-corn Gourmet' : 'Gourmet Popcorn' },
     { id: 'textiles', label: language === 'fr' ? 'Friperie & Chaussures' : 'Textiles & Footwear' },
-    { id: 'plaster', label: language === 'fr' ? 'Plâtre de Gypse' : 'Industrial Plaster' }
+    { id: 'plaster', label: language === 'fr' ? 'Plâtre de Gypse' : 'Industrial Plaster' },
+    { id: 'appliances', label: language === 'fr' ? 'Électroménager' : 'Home Appliances' }
   ];
 
   const filteredItems = activePillarFilter === 'all'
     ? commodityItems
     : commodityItems.filter(item => {
-        if (activePillarFilter === 'paper') return item.id === 'double-a-paper';
-        if (activePillarFilter === 'popcorn') return item.id === 'argentine-popcorn';
-        if (activePillarFilter === 'textiles') return item.id === 'european-textiles';
-        if (activePillarFilter === 'plaster') return item.id === 'industrial-plaster';
-        return true;
+        if (activePillarFilter === 'paper') return item.id === 'prod-double-a';
+        if (activePillarFilter === 'popcorn') return item.id === 'prod-popcorn-arg';
+        if (activePillarFilter === 'textiles') return item.id === 'prod-used-clothing';
+        if (activePillarFilter === 'plaster') return item.id === 'prod-plaster-gypsum';
+        if (activePillarFilter === 'appliances') return item.id === 'prod-fridges-appliances';
+        return false;
       });
 
   const handleDownloadSpec = (itemName: string) => {

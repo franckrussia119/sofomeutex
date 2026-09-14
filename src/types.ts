@@ -14,7 +14,8 @@ export type CommodityPillar =
   | 'Double A Paper (Cameroon Exclusive)'
   | 'Argentine Gourmet Popcorn'
   | 'European Used Apparel & Footwear'
-  | 'High-Grade Industrial Plaster';
+  | 'High-Grade Industrial Plaster'
+  | 'Home Refrigeration & Appliances';
 
 export interface CommodityItem {
   id: string;
