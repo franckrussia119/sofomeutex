@@ -100,7 +100,7 @@ export const COMMODITY_ITEMS: CommodityItem[] = [
       '/assets/images/paper_double_a_reams.webp'
     ],
     summary: 'The benchmark of luxury copier paper globally, imported with sovereign exclusivity directly to Cameroon. Designed to resist high-humidity tropical conditions with zero jams.',
-    detailedDescription: 'Wardiere & Co. is the exclusive authorized importer of genuine Double A A4 copier paper in the Republic of Cameroon. Manufactured from sustainable Farmed Trees ("Paper Tree from KHAN-NA"), Double A fibers provide high fiber density, exceptional smoothness, and high opacity that eliminates show-through on double-sided color copying and offset printing. Specially packed in heat-sealed moisture barrier wrappers to prevent paper warping in Doualas humid maritime climate.',
+    detailedDescription: 'Sofomeutex is the exclusive authorized importer of genuine Double A A4 copier paper in the Republic of Cameroon. Manufactured from sustainable Farmed Trees ("Paper Tree from KHAN-NA"), Double A fibers provide high fiber density, exceptional smoothness, and high opacity that eliminates show-through on double-sided color copying and offset printing. Specially packed in heat-sealed moisture barrier wrappers to prevent paper warping in Doualas humid maritime climate.',
     keyFeatures: [
       { label: 'Exclusivity', value: 'Exclusive Official Distribution Partner for Cameroon' },
       { label: 'Sheet Count', value: '500 Precise Laser-Cut Sheets per Ream' },
@@ -252,7 +252,7 @@ export const COMMODITY_ITEMS: CommodityItem[] = [
       '/assets/images/fridge_double_door.jpg'
     ],
     summary: 'Factory-direct household and commercial refrigeration units engineered for Central African voltage and climate conditions, delivered in full or mixed-model container loads.',
-    detailedDescription: 'Wardiere & Co. sources refrigerators, freezers, and combo units directly from certified manufacturing partners in the Guangzhou-Foshan industrial corridor, bypassing wholesale middlemen to deliver factory pricing to Cameroonian retailers and distributors. Every unit is configured for the regional 220-240V/50Hz power grid and tropical ambient temperatures, with R600a eco-refrigerant compressors chosen for durability under frequent grid fluctuations. Mixed-model container loading allows distributors to combine mini fridges, double-door combos, and chest freezers within a single FCL shipment to match retail demand.',
+    detailedDescription: 'Sofomeutex sources refrigerators, freezers, and combo units directly from certified manufacturing partners in the Guangzhou-Foshan industrial corridor, bypassing wholesale middlemen to deliver factory pricing to Cameroonian retailers and distributors. Every unit is configured for the regional 220-240V/50Hz power grid and tropical ambient temperatures, with R600a eco-refrigerant compressors chosen for durability under frequent grid fluctuations. Mixed-model container loading allows distributors to combine mini fridges, double-door combos, and chest freezers within a single FCL shipment to match retail demand.',
     keyFeatures: [
       { label: 'Sourcing Model', value: 'Direct Factory-Gate Procurement, Zero Wholesale Markup' },
       { label: 'Unit Range', value: 'Mini Fridges, Double-Door Combos & Chest Freezers' },
@@ -333,7 +333,7 @@ export const CLIENT_PROFILES: ClientProfile[] = [
     sector: 'National Paper, Stationery & Publishing Supply',
     region: 'Douala & Yaoundé, Cameroon',
     volumeAnnually: '120+ FCL Containers Annually',
-    testimonial: 'Wardiere & Co. has given us uninterrupted exclusive access to genuine Double A paper. The quality is flawless, delivery schedules into the Port of Douala are respected down to the day, and zero jammed sheets means our printing press clients will never use any other brand.',
+    testimonial: 'Sofomeutex has given us uninterrupted exclusive access to genuine Double A paper. The quality is flawless, delivery schedules into the Port of Douala are respected down to the day, and zero jammed sheets means our printing press clients will never use any other brand.',
     signatory: 'Dieudonné Mbarga',
     title: 'Director of Procurement & Supply Chain',
     partnershipYears: '7 Years Exclusive Client'
@@ -344,7 +344,7 @@ export const CLIENT_PROFILES: ClientProfile[] = [
     sector: 'Industrial Food Processing & Cinema Chains',
     region: 'Douala, Bafoussam & N’Djamena',
     volumeAnnually: '45+ FCL Containers Annually',
-    testimonial: 'We run high-throughput industrial popcorn popping lines. The Argentine butterfly popcorn supplied by Wardiere delivers an unmatched expansion ratio of 44+. Yield per sack is 18% higher than our previous suppliers, drastically increasing our profit margins.',
+    testimonial: 'We run high-throughput industrial popcorn popping lines. The Argentine butterfly popcorn supplied by Sofomeutex delivers an unmatched expansion ratio of 44+. Yield per sack is 18% higher than our previous suppliers, drastically increasing our profit margins.',
     signatory: 'Hassane Ousmanou',
     title: 'Chief Operations Officer',
     partnershipYears: '5 Years Strategic Buyer'
@@ -355,7 +355,7 @@ export const CLIENT_PROFILES: ClientProfile[] = [
     sector: 'Wholesale Bales & Footwear Merchant Union',
     region: 'Marché Central (Douala) & Marché Mokolo (Yaoundé)',
     volumeAnnually: '85+ FCL Containers Annually',
-    testimonial: 'In the second-hand clothing market, trust is everything. Wardieres European bales are honestly graded—true Cream and Grade A with fresh European brands, no damaged goods, and cleanly paired shoes that sell immediately.',
+    testimonial: 'In the second-hand clothing market, trust is everything. Sofomeutexs European bales are honestly graded—true Cream and Grade A with fresh European brands, no damaged goods, and cleanly paired shoes that sell immediately.',
     signatory: 'Mme. Beatrice Fotso',
     title: 'President of Wholesale Garment Merchants Union',
     partnershipYears: '8 Years Bulk Partner'
@@ -376,12 +376,12 @@ export const CLIENT_PROFILES: ClientProfile[] = [
 export const TEAM_MEMBERS: TeamMember[] = [
   {
     id: 'team-01',
-    name: 'Arthur J. Wardiere',
+    name: 'Fokui Meudje Jean',
     role: 'Founder & Chief Executive Officer',
-    location: 'New York, USA / Geneva',
-    bio: 'Over 28 years directing multi-commodity international trade houses, structured trade finance, and bilateral import corridors between North America, Europe, and West-Central Africa.',
+    location: 'Douala, Cameroon',
+    bio: 'Founded Sofomeutex 30 years ago from a single trading desk in Douala, growing it into a multi-commodity import house spanning paper, agro-food, textiles, construction materials, and home appliances across Central Africa.',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80',
-    credentials: ['Columbia Business School MBA', 'ICC International Maritime Committee', 'Global Trade & Logistics Fellow']
+    credentials: ['30 Years in International Trade', 'Founder, Sofomeutex Group', 'Central Africa Import & Logistics Pioneer']
   },
   {
     id: 'team-02',
@@ -590,7 +590,7 @@ export const FRENCH_COMMODITY_ITEMS: CommodityItem[] = [
     certifications: ['ISO 9001:2015', 'ISO 14001', 'Arbres de Culture KHAN-NA (Zéro Déforestation)', 'Certificat de Poids & Comptage SGS'],
     gradeAssay: 'Certification Zéro Bourrage 24/7 ; Testé sur Presses Numériques Haut Débit 100ppm',
     summary: 'La référence mondiale du papier reprographique haut de gamme, importé avec exclusivité souveraine au Cameroun. Conçu pour résister à l’humidité tropicale sans aucun bourrage.',
-    detailedDescription: 'Wardiere & Co. est l’unique importateur officiel agréé du papier authentique Double A au Cameroun. Fabriqué à partir d’arbres de culture (KHAN-NA), les fibres denses procurent un lissé exceptionnel et une opacité totale sans transparence en recto-verso. Emballage thermoscellé anti-humidité protégeant les rames dans le climat maritime équatorial de Douala.',
+    detailedDescription: 'Sofomeutex est l’unique importateur officiel agréé du papier authentique Double A au Cameroun. Fabriqué à partir d’arbres de culture (KHAN-NA), les fibres denses procurent un lissé exceptionnel et une opacité totale sans transparence en recto-verso. Emballage thermoscellé anti-humidité protégeant les rames dans le climat maritime équatorial de Douala.',
     keyFeatures: [
       { label: 'Exclusivité', value: 'Partenaire Exclusif Officiel pour la République du Cameroun' },
       { label: 'Feuilles', value: '500 Feuilles A4 Découpe Laser Parfaite' },
@@ -706,7 +706,7 @@ export const FRENCH_COMMODITY_ITEMS: CommodityItem[] = [
     certifications: ['Déclaration de Conformité CE', 'Certificat de Fabrication CCC', 'Inspection Avant Expédition SGS', 'Certificat d’Origine Formule A'],
     gradeAssay: 'Test fonctionnel complet avant chargement ; Tolérance zéro panne à l’arrivée ; Compresseurs testés en pression à l’origine',
     summary: 'Réfrigérateurs et congélateurs domestiques et commerciaux directement sourcés en usine, conçus pour la tension électrique et le climat de l’Afrique Centrale, livrés en conteneurs complets ou multi-modèles.',
-    detailedDescription: 'Wardiere & Co. sourcé ses réfrigérateurs, congélateurs et combinés directement auprès de partenaires manufacturiers certifiés du corridor industriel Guangzhou-Foshan, en éliminant les intermédiaires grossistes pour offrir des prix usine aux distributeurs et détaillants camerounais. Chaque unité est configurée pour le réseau électrique régional 220-240V/50Hz et les conditions climatiques tropicales, avec des compresseurs au réfrigérant écologique R600a choisis pour leur robustesse face aux fluctuations fréquentes du réseau. Le chargement multi-modèles permet aux distributeurs de combiner mini-réfrigérateurs, combinés double porte et congélateurs coffres au sein d’un même conteneur FCL.',
+    detailedDescription: 'Sofomeutex sourcé ses réfrigérateurs, congélateurs et combinés directement auprès de partenaires manufacturiers certifiés du corridor industriel Guangzhou-Foshan, en éliminant les intermédiaires grossistes pour offrir des prix usine aux distributeurs et détaillants camerounais. Chaque unité est configurée pour le réseau électrique régional 220-240V/50Hz et les conditions climatiques tropicales, avec des compresseurs au réfrigérant écologique R600a choisis pour leur robustesse face aux fluctuations fréquentes du réseau. Le chargement multi-modèles permet aux distributeurs de combiner mini-réfrigérateurs, combinés double porte et congélateurs coffres au sein d’un même conteneur FCL.',
     keyFeatures: [
       { label: 'Modèle d’Approvisionnement', value: 'Achat Direct Usine, Zéro Marge Grossiste' },
       { label: 'Gamme d’Unités', value: 'Mini-Réfrigérateurs, Combinés Double Porte & Congélateurs Coffres' },
@@ -777,7 +777,7 @@ export const FRENCH_CLIENT_PROFILES: ClientProfile[] = [
     sector: 'Distribution Nationale Papier, Papeterie & Édition',
     region: 'Douala & Yaoundé, Cameroun',
     volumeAnnually: '120+ Conteneurs FCL / An',
-    testimonial: 'Wardiere & Co. nous assure un approvisionnement exclusif ininterrompu en papier authentique Double A. La qualité est irréprochable, les délais au Port de Douala sont respectés au jour près, et le zéro bourrage fidélise totalement nos imprimeurs.',
+    testimonial: 'Sofomeutex nous assure un approvisionnement exclusif ininterrompu en papier authentique Double A. La qualité est irréprochable, les délais au Port de Douala sont respectés au jour près, et le zéro bourrage fidélise totalement nos imprimeurs.',
     signatory: 'Dieudonné Mbarga',
     title: 'Directeur Achats & Chaîne Logistique',
     partnershipYears: 'Client Exclusif depuis 7 Ans'
@@ -788,7 +788,7 @@ export const FRENCH_CLIENT_PROFILES: ClientProfile[] = [
     sector: 'Transformation Agro-Industrielle & Réseaux de Cinémas',
     region: 'Douala, Bafoussam & N’Djamena',
     volumeAnnually: '45+ Conteneurs FCL / An',
-    testimonial: 'Nous exploitons des lignes d’éclatement industrielles intensives. Le maïs papillon argentin fourni par Wardiere offre un taux d’expansion record de 44+. Le rendement au sac surpasse de 18% nos précédents fournisseurs.',
+    testimonial: 'Nous exploitons des lignes d’éclatement industrielles intensives. Le maïs papillon argentin fourni par Sofomeutex offre un taux d’expansion record de 44+. Le rendement au sac surpasse de 18% nos précédents fournisseurs.',
     signatory: 'Hassane Ousmanou',
     title: 'Directeur des Opérations Industrielles',
     partnershipYears: 'Acheteur Stratégique depuis 5 Ans'
@@ -799,7 +799,7 @@ export const FRENCH_CLIENT_PROFILES: ClientProfile[] = [
     sector: 'Union des Grossistes en Balles & Chaussures',
     region: 'Marché Central (Douala) & Marché Mokolo (Yaoundé)',
     volumeAnnually: '85+ Conteneurs FCL / An',
-    testimonial: 'Dans le commerce de la friperie, la franchise fait tout. Les balles européennes de Wardiere sont fidèles au classement : vraie Crème et Grade A de marques européennes actuelles, et des chaussures appariées qui s’écoulent immédiatement.',
+    testimonial: 'Dans le commerce de la friperie, la franchise fait tout. Les balles européennes de Sofomeutex sont fidèles au classement : vraie Crème et Grade A de marques européennes actuelles, et des chaussures appariées qui s’écoulent immédiatement.',
     signatory: 'Mme. Béatrice Fotso',
     title: 'Présidente de l’Union des Grossistes Textiles',
     partnershipYears: 'Partenaire depuis 8 Ans'
@@ -821,8 +821,9 @@ export const FRENCH_TEAM_MEMBERS: TeamMember[] = [
   {
     ...TEAM_MEMBERS[0],
     role: 'Fondateur & Président Directeur Général',
-    bio: 'Plus de 28 années de direction de sociétés de négoce international multi-produits, financements structurés et corridors d’importation bilatéraux entre Amérique du Nord, Europe et Afrique Centrale.',
-    credentials: ['MBA Columbia Business School', 'Comité Maritime International CCI', 'Fellow en Logistique Mondiale']
+    location: 'Douala, Cameroun',
+    bio: 'A fondé Sofomeutex il y a 30 ans à partir d’un simple bureau de négoce à Douala, en bâtissant une maison d’importation multi-filières couvrant le papier, l’agroalimentaire, le textile, les matériaux de construction et l’électroménager à travers l’Afrique Centrale.',
+    credentials: ['30 Ans dans le Commerce International', 'Fondateur du Groupe Sofomeutex', 'Pionnier de l’Import & Logistique en Afrique Centrale']
   },
   {
     ...TEAM_MEMBERS[1],

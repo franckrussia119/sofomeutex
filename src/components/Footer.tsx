@@ -83,7 +83,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 <Anchor className="w-5 h-5 stroke-[2.4]" />
               </div>
               <span className="font-serif-luxury text-2xl font-bold tracking-tight text-white">
-                Wardiere & Co.
+                Sofomeutex
               </span>
             </div>
 
@@ -186,7 +186,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 <MapPin className="w-3.5 h-3.5 text-stone-500 mt-0.5 flex-shrink-0" />
                 <div>
                   <span className="text-white font-medium block">
-                    {language === 'fr' ? 'Siège États-Unis' : 'New York Headquarters'}
+                    {language === 'fr' ? 'Bureau de Liaison États-Unis' : 'New York Liaison Office'}
                   </span>
                   <span>575 Fifth Avenue, New York, NY 10017, USA</span>
                 </div>

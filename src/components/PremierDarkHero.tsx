@@ -121,7 +121,7 @@ export const PremierDarkHero: React.FC<PremierDarkHeroProps> = ({
             <div
               key={slide.id}
               className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-                isActive ? 'opacity-35 z-1' : 'opacity-0 z-0'
+                isActive ? 'opacity-55 z-1' : 'opacity-0 z-0'
               }`}
             >
               <img
@@ -132,7 +132,7 @@ export const PremierDarkHero: React.FC<PremierDarkHeroProps> = ({
                   (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=2000&q=85';
                 }}
                 className={`w-full h-full object-cover object-center transform transition-transform duration-[7000ms] ease-out ${
-                  isActive ? 'scale-105 filter brightness-90 contrast-105' : 'scale-100'
+                  isActive ? 'scale-105 filter brightness-100 contrast-105' : 'scale-100'
                 }`}
               />
             </div>
@@ -140,8 +140,8 @@ export const PremierDarkHero: React.FC<PremierDarkHeroProps> = ({
         })}
 
         {/* Multi-layered cinematic gradient overlays for pristine readability */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0f12] via-[#0a0f12]/80 to-[#0a0f12]/50 z-2" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0a0f12]/95 via-transparent to-[#0a0f12]/95 z-2" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0f12] via-[#0a0f12]/60 to-[#0a0f12]/25 z-2" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0a0f12]/75 via-transparent to-[#0a0f12]/75 z-2" />
         
         {/* Subtle Ambient Golden Glow & Dot Grid */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1100px] h-[500px] bg-gradient-to-b from-amber-600/15 via-amber-900/5 to-transparent blur-3xl z-2" />

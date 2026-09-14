@@ -296,7 +296,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ initialCommodity, onNa
                   >
                     <option value="Port of Douala Terminal (CMDLA)">{language === 'fr' ? 'Terminal Portuaire de Douala (DIT / PAD)' : 'Port of Douala Container Terminal (DIT / PAD)'}</option>
                     <option value="Kribi Deep Sea Port (CMKBI)">{language === 'fr' ? 'Port en Eau Profonde de Kribi (CMKBI)' : 'Port of Kribi Deep Sea Terminal (CMKBI)'}</option>
-                    <option value="Akwa Bonded Warehouse, Douala">{language === 'fr' ? 'Entrepôt sous Douane Wardiere à Akwa (Douala)' : 'Wardiere Akwa Bonded Warehouse (Douala)'}</option>
+                    <option value="Akwa Bonded Warehouse, Douala">{language === 'fr' ? 'Entrepôt sous Douane Sofomeutex à Akwa (Douala)' : 'Sofomeutex Akwa Bonded Warehouse (Douala)'}</option>
                     <option value="Marché Mokolo Distribution, Yaoundé">{language === 'fr' ? 'Plateforme Marché Mokolo (Yaoundé)' : 'Marché Mokolo Hub (Yaoundé)'}</option>
                     <option value="N’Djamena Central Bonded Depot, Chad">{language === 'fr' ? 'Dépôt Central sous Douane de N’Djamena (Tchad)' : 'N’Djamena Central Bonded Depot (Chad)'}</option>
                   </select>
@@ -449,7 +449,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ initialCommodity, onNa
                   <MapPin className="w-4 h-4 text-amber-700 mt-0.5 flex-shrink-0" />
                   <div>
                     <strong className="block text-stone-900 font-sans">Boulevard de la Liberté</strong>
-                    <span>Immeuble Wardiere, Akwa, Douala, Cameroun</span>
+                    <span>Immeuble Sofomeutex, Akwa, Douala, Cameroun</span>
                   </div>
                 </div>
 
@@ -477,7 +477,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ initialCommodity, onNa
               </h4>
               <div className="space-y-3 text-xs font-mono text-stone-600">
                 <div>
-                  <strong className="text-stone-900 block font-sans">New York Corporate Office</strong>
+                  <strong className="text-stone-900 block font-sans">New York Liaison Office</strong>
                   <span>575 Fifth Avenue, 28th Floor, New York, NY 10017, USA</span>
                   <span className="block text-stone-500">Tel: +1 (212) 890-4400</span>
                 </div>

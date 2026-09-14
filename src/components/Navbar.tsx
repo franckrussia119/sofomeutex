@@ -82,7 +82,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <div>
               <div className="flex items-center gap-2">
                 <span className="font-serif-luxury text-2xl font-bold tracking-tight text-stone-900 group-hover:text-amber-800 transition-colors">
-                  Wardiere & Co.
+                  Sofomeutex
                 </span>
                 <span className="hidden md:inline-block px-2 py-0.5 text-[9px] font-mono font-bold uppercase tracking-wider bg-amber-50 text-amber-800 border border-amber-200/80 rounded-full">
                   {language === 'fr' ? 'Import & Négoce' : 'Imports & Supply'}

@@ -200,16 +200,27 @@ export const CommodityDetailModal: React.FC<CommodityDetailModalProps> = ({
             {language === 'fr' ? 'Fermer l’aperçu' : 'Close Overview'}
           </button>
 
-          <button
-            onClick={() => {
-              onClose();
-              onOpenRFQ(item);
-            }}
-            className="px-6 py-2.5 rounded-xl bg-amber-700 hover:bg-amber-800 text-white font-bold text-xs uppercase tracking-wider shadow-sm transition-all flex items-center space-x-2 cursor-pointer active:scale-98"
-          >
-            <FileText className="w-4 h-4" />
-            <span>{language === 'fr' ? 'Demander une Allocation de Conteneur (RFQ)' : 'Request Container Allocation (RFQ)'}</span>
-          </button>
+          <div className="flex items-center gap-3">
+            <a
+              href={`/datasheets/${item.id}-datasheet.pdf`}
+              download={`Sofomeutex-${item.id}-Technical-Data-Sheet.pdf`}
+              className="px-4 py-2.5 rounded-xl border border-stone-300 hover:border-stone-400 text-stone-700 text-xs font-semibold transition-all cursor-pointer flex items-center space-x-1.5"
+            >
+              <FileText className="w-3.5 h-3.5 text-stone-600" />
+              <span>{language === 'fr' ? 'Télécharger la Fiche Technique (PDF)' : 'Download Data Sheet (PDF)'}</span>
+            </a>
+
+            <button
+              onClick={() => {
+                onClose();
+                onOpenRFQ(item);
+              }}
+              className="px-6 py-2.5 rounded-xl bg-amber-700 hover:bg-amber-800 text-white font-bold text-xs uppercase tracking-wider shadow-sm transition-all flex items-center space-x-2 cursor-pointer active:scale-98"
+            >
+              <FileText className="w-4 h-4" />
+              <span>{language === 'fr' ? 'Demander une Allocation de Conteneur (RFQ)' : 'Request Container Allocation (RFQ)'}</span>
+            </button>
+          </div>
         </div>
 
       </div>

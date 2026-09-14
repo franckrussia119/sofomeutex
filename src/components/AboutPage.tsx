@@ -58,8 +58,8 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             
             <p className="text-stone-600 text-sm leading-relaxed">
               {language === 'fr'
-                ? 'Le négoce traditionnel de marchandises en Afrique Centrale a longtemps souffert de chaînes d’intermédiaires informels, de classements hétérogènes et de retards maritimes imprévisibles. Wardiere & Co. a été créée pour introduire un standard corporate sans compromis dans la région.'
-                : 'Traditional commodity trading in Central Africa has long been hampered by informal brokerage chains, inconsistent grading, and unpredictable maritime delays. Wardiere & Co. was established to introduce an uncompromising tier-one corporate standard to the region.'}
+                ? 'Le négoce traditionnel de marchandises en Afrique Centrale a longtemps souffert de chaînes d’intermédiaires informels, de classements hétérogènes et de retards maritimes imprévisibles. Sofomeutex a été créée pour introduire un standard corporate sans compromis dans la région.'
+                : 'Traditional commodity trading in Central Africa has long been hampered by informal brokerage chains, inconsistent grading, and unpredictable maritime delays. Sofomeutex was established to introduce an uncompromising tier-one corporate standard to the region.'}
             </p>
 
             <p className="text-stone-600 text-sm leading-relaxed">
@@ -93,22 +93,19 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           <div className="lg:col-span-6">
             <div className="relative rounded-3xl overflow-hidden shadow-xl border border-stone-200">
               <img 
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80" 
-                alt="Corporate Headquarters"
+                src="/assets/images/paper_container_loading.webp" 
+                alt="Sofomeutex Container Loading Operations"
                 referrerPolicy="no-referrer"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=1200&q=80';
-                }}
                 className="w-full h-[460px] object-cover" 
               />
               <div className="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-transparent p-8 flex flex-col justify-end text-white">
                 <span className="text-xs font-mono text-amber-300 uppercase tracking-widest">
-                  {language === 'fr' ? 'Standard de Gouvernance Mondiale' : 'Global Governance Standard'}
+                  {language === 'fr' ? 'Opérations d’Exportation en Direct' : 'Live Export Operations'}
                 </span>
                 <h3 className="font-serif-luxury text-2xl font-bold mt-1">
-                  {language === 'fr' ? 'Desks Exécutifs Transatlantique & Port de Douala' : 'Dual Transatlantic & Douala Executive Desks'}
+                  {language === 'fr' ? 'Chargement Direct de Conteneurs, Origine à Douala' : 'Direct Container Loading, Origin to Douala'}
                 </h3>
-                <p className="text-xs text-stone-300 mt-1">New York • Antwerp • Buenos Aires • Douala (Akwa)</p>
+                <p className="text-xs text-stone-300 mt-1">Thaïlande • Chine • Argentine • Europe → Douala (Akwa)</p>
               </div>
             </div>
           </div>
@@ -121,7 +118,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
               {language === 'fr' ? 'Notre Charte Opérationnelle' : 'Our Operating Charter'}
             </span>
             <h2 className="font-serif-luxury text-3xl font-bold text-stone-900">
-              {language === 'fr' ? 'Les Quatre Piliers de Wardiere & Co.' : 'The Four Cornerstones of Wardiere & Co.'}
+              {language === 'fr' ? 'Les Quatre Piliers de Sofomeutex' : 'The Four Cornerstones of Sofomeutex'}
             </h2>
           </div>
 
@@ -240,8 +237,8 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           <div className="pt-6 border-t border-stone-800 flex flex-col sm:flex-row items-center justify-between gap-4">
             <span className="text-xs font-mono text-stone-400">
               {language === 'fr' 
-                ? 'Siège à New York • Hub Opérationnel au Port de Douala, Cameroun'
-                : 'Headquartered in New York with Operations Hub in Douala, Cameroon'}
+                ? 'Fondée et basée à Douala, Cameroun • Bureau de Liaison à New York'
+                : 'Headquartered in Douala, Cameroon • International Liaison Office in New York'}
             </span>
             <button
               onClick={() => onNavigate('contact')}

@@ -50,10 +50,18 @@ export const SupplyPage: React.FC<SupplyPageProps> = ({
         return false;
       });
 
-  const handleDownloadSpec = (itemName: string) => {
+  const handleDownloadSpec = (item: CommodityItem) => {
+    // Trigger the actual PDF download
+    const link = document.createElement('a');
+    link.href = `/datasheets/${item.id}-datasheet.pdf`;
+    link.download = `Sofomeutex-${item.id}-Technical-Data-Sheet.pdf`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
     const msg = language === 'fr'
-      ? `Fiche technique officielle pour "${itemName}" générée et prête au téléchargement.`
-      : `Official Technical Spec Sheet for "${itemName}" has been prepared for download.`;
+      ? `Fiche technique officielle pour "${item.name}" téléchargée.`
+      : `Official Technical Spec Sheet for "${item.name}" has been downloaded.`;
     setDownloadNotification(msg);
     setTimeout(() => setDownloadNotification(null), 4000);
   };
@@ -261,7 +269,7 @@ export const SupplyPage: React.FC<SupplyPageProps> = ({
                   <div className="pt-4 border-t border-stone-100 flex flex-wrap items-center justify-between gap-3">
                     <div className="flex items-center space-x-2">
                       <button
-                        onClick={() => handleDownloadSpec(item.name)}
+                        onClick={() => handleDownloadSpec(item)}
                         className="px-3.5 py-2.5 rounded-xl border border-stone-300 hover:border-stone-400 text-stone-700 text-xs font-semibold flex items-center space-x-1.5 transition-all cursor-pointer"
                       >
                         <Download className="w-3.5 h-3.5 text-stone-600" />
